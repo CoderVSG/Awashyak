@@ -1,8 +1,13 @@
 import 'dart:convert';
 
 import "package:http/http.dart" as http;
+import 'dart:convert';
+import 'dart:io';
 
-String apiKey = "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";
+import '../utilities/datamodel.dart';
+import 'package:flutter/material.dart';
+
+String apiKey = Platform.environment['OPENAI_API_KEY'] ?? '';
 
 class ApiServices {
   static String baseUrl = "https://api.openai.com/v1/completions";

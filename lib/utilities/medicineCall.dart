@@ -5,7 +5,7 @@ import '../utilities/datamodel.dart';
 import 'package:flutter/material.dart';
 import "package:http/http.dart" as http;
 
-String apiKey = "ef1b08e122msh6f06b3a0bfe082bp125d8djsnb0092eeb7ba8";
+String apiKey =Platform.environment['OPENAI_API_KEY'] ?? '';
 
 class MedicineDataFetch {
 
